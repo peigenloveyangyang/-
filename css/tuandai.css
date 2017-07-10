@@ -1,0 +1,472 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+#mus-bg{
+    display: none;
+    height: 0;
+}
+#mus-time{
+    display: none;
+    height: 0;
+}
+#musbtn{
+    position: absolute;
+    right:2%;
+    top:1%;
+    z-index: 10;
+    width: 10%;
+    animation: moverotate 2s linear infinite;
+}
+@-webkit-keyframes moverotate{
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+#bg{
+    position: relative;
+    text-align: center;
+    display: block;
+}
+#bg>img:nth-child(1){
+    position: absolute;
+    width: 96%;
+    left: 0;
+    top:0;
+    animation: fadeOut 2s linear infinite;
+}
+#bg>img:nth-child(2){
+    width: 100%;
+    height: 100%;
+}
+#bg>img:nth-child(3){
+    position: absolute;
+    width: 10%;
+    left: 32%;
+    top: 16.9%;
+}
+#light-4{
+    position: absolute;
+    left: 36%;
+    top:34%;
+}
+#light-4 img{
+    width: 60%;
+}
+#light-3{
+    position: absolute;
+    left: 37%;
+    top:46%;
+}
+#light-3 img{
+    width: 60%;
+}
+#light-2{
+    position: absolute;
+    left: 38%;
+    top:58%;
+}
+#light-2 img{
+    width: 60%;
+}
+#light-1{
+    position: absolute;
+    left: 39%;
+    top:70%;
+}
+#light-1 img{
+    width: 60%;
+}
+
+#txt{
+    position: absolute;
+    z-index: 5;
+    bottom:4%;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+/*放大*/
+@-webkit-keyframes moverbig4{
+    0%{
+        transform-origin:50% 35%;
+        transform:scale(1);
+        display: block;
+    }
+    100%{
+        transform-origin: 50% 35%;
+        transform:scale(4);
+        display: none;
+    }
+}
+@-webkit-keyframes moverbig3{
+    0%{
+        transform-origin:50% 48%;
+        transform:scale(1);
+    }
+    100%{
+        transform-origin: 50% 48%;
+        transform:scale(4);
+    }
+}
+@-webkit-keyframes moverbig2{
+     0%{
+         transform-origin:50% 72%;
+         transform:scale(1);
+     }
+     100%{
+         transform-origin: 50% 72%;
+         transform:scale(4);
+     }
+ }
+@-webkit-keyframes moverbig1{
+    0%{
+        transform-origin:50% 85%;
+        transform:scale(1);
+    }
+    100%{
+        transform-origin: 50% 85%;
+        transform:scale(4);
+    }
+}
+@-webkit-keyframes moversmall{
+    0%{
+        transform-origin:50% 50%;
+        transform:scale(3);
+    }
+    100%{
+        transform-origin: 50% 50%;
+        transform:scale(1);
+    }
+}
+
+/*children*/
+#children{
+    position: relative;
+    text-align: center;
+    display: none;
+    width: 100%;
+    height:100%;
+}
+#children>img:nth-child(1){
+    position: relative;
+    width: 100%;
+}
+#children>img:nth-child(2){
+    position: absolute;
+    width: 46%;
+    top:11%;
+    left: 11%;
+    animation: flipInY 4s linear;
+}
+#children>img:nth-child(3){
+    position: absolute;
+    width: 30%;
+    top:37%;
+    left: 21%;
+    animation: tou 1.5s linear infinite;
+}
+#children>img:nth-child(4){
+    position: absolute;
+    width: 30%;
+    top:74%;
+    left: 47%;
+}
+#children>img:nth-child(5){
+    position: absolute;
+    width: 97%;
+    top:6%;
+    left: 3%;
+    animation: fadeOut2 3s linear infinite;
+}
+#children>img:nth-child(6){
+    position: absolute;
+    width: 20%;
+    top:49%;
+    left: 58%;
+    transform: rotateY(180deg);
+    animation: back 1.5s linear infinite;
+}
+
+/*children*/
+#women{
+    position: relative;
+    text-align: center;
+    display: none;
+    width: 100%;
+    height:100%;
+}
+#women>img:nth-child(1){
+    position: relative;
+    width: 100%;
+}
+#women>img:nth-child(2){
+    position: absolute;
+    width: 54%;
+    top:11%;
+    left: 11%;
+    animation: flipInY 4s linear;
+}
+#women>img:nth-child(3){
+    position: absolute;
+    width: 11%;
+    top:23%;
+    left: 11%;
+    transform-origin: left bottom;
+    animation: tou 1.5s linear infinite;
+}
+#women>img:nth-child(4){
+    position: absolute;
+    width: 26%;
+    top:72%;
+    left: 50%;
+}
+#women>img:nth-child(5){
+    position: absolute;
+    width: 88%;
+    top:38%;
+    left: 5%;
+    animation: fadeOut2 3s linear infinite;
+}
+#women>img:nth-child(6){
+    position: absolute;
+    width: 18%;
+    top:57%;
+    left: 67%;
+    animation: back 1.5s linear infinite;
+}
+
+/*work*/
+#work{
+    position: relative;
+    text-align: center;
+    display: none;
+    width: 100%;
+    height:100%;
+}
+#work>img:nth-child(1){
+    position: relative;
+    width: 100%;
+}
+#work>img:nth-child(2){
+    position: absolute;
+    width: 54%;
+    top:11%;
+    left: 11%;
+    animation: flipInY 4s linear;
+}
+#work>img:nth-child(3){
+    position: absolute;
+    width: 21%;
+    top:36%;
+    left:40%;
+    animation: tou 1.5s linear infinite;
+}
+#work>img:nth-child(4){
+    position: absolute;
+    width: 4%;
+    top:21%;
+    left: 75%;
+}
+#work>img:nth-child(5){
+    position: absolute;
+    width: 29%;
+    top:27%;
+    left: 35%;
+}
+#work>img:nth-child(6){
+    position: absolute;
+    width: 98%;
+    top:1%;
+    right:0;
+    animation: fadeOut2 3s linear infinite;
+}
+#work>img:nth-child(7){
+    position: absolute;
+    width: 16%;
+    top:35%;
+    left: 8%;
+    animation: back 1.5s linear infinite;
+}
+
+
+/*oldman*/
+#oldman{
+    position: relative;
+    text-align: center;
+    display: none;
+    width: 100%;
+    height:100%;
+}
+#oldman>img:nth-child(1){
+    position: relative;
+    width: 100%;
+}
+#oldman>img:nth-child(2){
+    position: absolute;
+    width: 27%;
+    top:36%;
+    left: 23%;
+    transform-origin: left bottom;
+    animation: tou 1.5s linear infinite;
+}
+@-webkit-keyframes tou{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-6deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+#oldman>img:nth-child(3){
+    position: absolute;
+    width: 21%;
+    top:50%;
+    left: 24%;
+    transform-origin: center top;
+    animation: hand 1.5s linear infinite;
+}
+@-webkit-keyframes hand{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+#oldman>img:nth-child(4){
+    position: absolute;
+    width: 50%;
+    top:15%;
+    right: 0;
+    animation: fadeOut2 3s linear infinite;
+}
+#oldman>img:nth-child(5){
+    position: absolute;
+    width: 41%;
+    top:11%;
+    left: 10%;
+    animation: flipInY 4s linear;
+
+}
+#oldman>img:nth-child(6){
+    position: absolute;
+    width: 4%;
+    top:52%;
+    left: 75%;
+}
+#oldman>img:nth-child(7){
+    position: absolute;
+    width: 20%;
+    top:36%;
+    left: 40%;
+    transform-origin: right center;
+    animation: back 1.5s linear infinite;
+}
+@-webkit-keyframes back{
+    0%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(200deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes fadeOut2{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*share*/
+#share{
+    position: relative;
+    text-align: center;
+    display: none;
+    width: 100%;
+    height:100%;
+}
+#share>img:nth-child(1){
+    position: relative;
+    width: 100%;
+}
+#share>img:nth-child(2){
+    position: absolute;
+    width: 78%;
+    top:18%;
+    left: 11%;
+}
+#share>img:nth-child(3){
+    position: absolute;
+    width: 46%;
+    top:37%;
+    left:30%;
+    z-index: 999;
+}
+#share>img:nth-child(4){
+    position: absolute;
+    width: 87%;
+    top:8%;
+    left: 0;
+    animation: fadeOut2 3s linear infinite;
+}
+#share>img:nth-child(5){
+    position: absolute;
+    width: 62%;
+    top:65%;
+    left: 20%;
+}
+#share>img:nth-child(6){
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    top:0;
+}
+#share>img:nth-child(7){
+    position: absolute;
+    width: 19%;
+    left: 24%;
+    top:48%;
+    animation: bigs 1s linear infinite;
+}
+@-webkit-keyframes bigs{
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+
